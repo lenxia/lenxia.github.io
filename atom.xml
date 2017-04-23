@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>Lenxia&#39;s Blog</title>
+  <subtitle>No cross,no crown</subtitle>
+  <link href="/atom.xml" rel="self"/>
+  
+  <link href="http://lenxia.github.io/"/>
+  <updated>2017-04-23T03:55:48.000Z</updated>
+  <id>http://lenxia.github.io/</id>
+  
+  <author>
+    <name>Lenxia</name>
+    
+  </author>
+  
+  <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Hello World</title>
+    <link href="http://lenxia.github.io/2017/02/15/hello-world/"/>
+    <id>http://lenxia.github.io/2017/02/15/hello-world/</id>
+    <published>2017-02-15T05:58:41.000Z</published>
+    <updated>2017-04-23T03:55:48.000Z</updated>
+    
+    <content type="html"><![CDATA[<ul>
+<li><a id="more"></a>
+<the rest="" of="" contents="" |="" 余下全文=""><br>Welcome to <a href="https://hexo.io/" target="_blank" rel="external">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="external">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="external">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="external">GitHub</a>.</the></li>
+</ul>
+<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo new <span class="string">"My New Post"</span></div></pre></td></tr></table></figure>
+<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="external">Writing</a></p>
+<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo server</div></pre></td></tr></table></figure>
+<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="external">Server</a></p>
+<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo generate</div></pre></td></tr></table></figure>
+<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="external">Generating</a></p>
+<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo deploy</div></pre></td></tr></table></figure>
+<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="external">Deployment</a></p>
+]]></content>
+    
+    <summary type="html">
+    
+      Welcome to Hexo.
+    
+    </summary>
+    
+      <category term="Hexo" scheme="http://lenxia.github.io/categories/Hexo/"/>
+    
+    
+      <category term="Hexo" scheme="http://lenxia.github.io/tags/Hexo/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Markdown 语法总结</title>
+    <link href="http://lenxia.github.io/2017/02/15/markdown-summary/"/>
+    <id>http://lenxia.github.io/2017/02/15/markdown-summary/</id>
+    <published>2017-02-15T02:29:38.000Z</published>
+    <updated>2017-04-23T10:43:56.000Z</updated>
+    
+    <content type="html"><![CDATA[<p>虽说又忙碌了一年，但是总觉得应该留下点什么，刚好前几天在用markdown写文章的时候遇到的坎坎坷坷。所以特地写了一遍关于markdown的一些语法，为以后写文章垫个路。希望可以帮到有需要的人，文章会不定期更新。好了，废话补多少，开始放大招😄😄😄</p>
+<a id="more"></a>
+<the rest="" of="" contents="" |="" 余下全文="">
+
+
+<h1 id="Markdown简介"><a href="#Markdown简介" class="headerlink" title="Markdown简介"></a><strong>Markdown简介</strong></h1><p><strong>摘自百度百科</strong><br>Markdown 是一种轻量级标记语言，创始人为约翰·格鲁伯（John Gruber）。它允许人们“使用易读易写的纯文本格式编写文档，然后转换成有效的XHTML(或者HTML)文档”。这种语言吸收了很多在电子邮件中已有的纯文本标记的特性。</p>
+<p>简单来说，就是抛弃平常<font face="黑体" color="#00ffff" size="4"><em>苦逼程序员</em></font>为了HTML的DIV+CSS焦头烂额的时候[<em>主要用于写文章</em>]，可以通过markdown易于编写的特点轻松的写文章或者博客等,当然了markdown也是<em>兼容HTML</em>的。</p>
+<h1 id="Markdown-语法演示"><a href="#Markdown-语法演示" class="headerlink" title="Markdown 语法演示"></a><strong>Markdown 语法演示</strong></h1><font face="黑体" color="green" size="2"><strong>ps:    这里主要是一些常用的语法</strong></font>
+
+<h2 id="文章标题"><a href="#文章标题" class="headerlink" title="文章标题"></a><strong><em>文章标题</em></strong></h2><p>先看下效果图。<br><img src="/2017/02/15/markdown-summary/h.png" size="12/"></p>
+<blockquote>
+<p>大体来说，用‘#’字符的个数代替html的元素h1、h2…..。这里显示四级标题,markdown可以支持到6级标题。</p>
+</blockquote>
+<h2 id="列表"><a href="#列表" class="headerlink" title="列表"></a><strong><em>列表</em></strong></h2><p>Markdown 支持有序列表和无序列表。</p>
+<p>无序列表可以使用’*’,’+’,’-‘作为前缀，如下：</p>
+<p><img src="/2017/02/15/markdown-summary/u.png" size="12/"></p>
+<p>有序列表则使用数字接着一个英文句点[<font color="green" size="2"><em>注：英文点之后需要加一空格</em></font>]：</p>
+<ol>
+<li>hadoop</li>
+<li>spark</li>
+<li>scala</li>
+<li>python</li>
+</ol>
+<h2 id="区块引用"><a href="#区块引用" class="headerlink" title="区块引用"></a><strong><em>区块引用</em></strong></h2><p>类似于邮件里的引言。</p>
+<p>语法：每一行行首加上’&gt;’符号即可，效果如下：</p>
+<blockquote>
+<p>数据仓库，英文名称为Data Warehouse，可简写为DW或DWH。数据仓库，是为企业所有级别的决策制定过程，提供所有类型数据支持的战略集合。</p>
+<p>它是单个数据存储，出于分析性报告和决策支持目的而创建。 为需要业务智能的企业，提供指导业务流程改进、监视时间、成本、质量以及控制。</p>
+</blockquote>
+<font color="green" size="2" face="黑体">tips: 换行只需在一空行前加上’&gt;’,然后回车即可。</font>
+
+<h2 id="代码块"><a href="#代码块" class="headerlink" title="代码块"></a><strong><em>代码块</em></strong></h2><p>攻城狮在写笔记或者其他记录自己的核心代码的时候,我们可以使用这种语法突出我们的核心代码,这个时候我们可以使用(`)将我们的代码包起来,如下面的Scala代码：</p>
+<p>例子：</p>
+<figure class="highlight"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div></pre></td><td class="code"><pre><div class="line">class ThreadDemo(threadName: String, fileName: String) extends Runnable &#123;</div><div class="line"></div><div class="line">  override def run(): Unit = &#123;</div><div class="line"></div><div class="line">    val writer = new PrintWriter(new File("test" + fileName))</div><div class="line"></div><div class="line">    val dataSource: String = "hadoop java spark shell"</div><div class="line">    val words = dataSource.split(" ")</div><div class="line">    for(i &lt;- 0 to words.length)&#123;</div><div class="line">      writer.write(words(Random.nextInt(words.length))+" ")</div><div class="line">      writer.flush()</div><div class="line">    &#125;</div><div class="line">    writer.close()</div><div class="line"></div><div class="line">    println(threadName+" 写入数据成功....")</div><div class="line">    Thread.sleep(5000)</div><div class="line">  &#125;</div><div class="line">&#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<h2 id="表格"><a href="#表格" class="headerlink" title="表格"></a><strong><em>表格</em></strong></h2><p>效果：</p>
+<table>
+<thead>
+<tr>
+<th>商家ID</th>
+<th style="text-align:center">商家名称</th>
+<th style="text-align:right">活动</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>100000</td>
+<td style="text-align:center">水果摊</td>
+<td style="text-align:right">便宜卖</td>
+</tr>
+<tr>
+<td>123456</td>
+<td style="text-align:center">海鲜楼</td>
+<td style="text-align:right">无</td>
+</tr>
+<tr>
+<td>341554</td>
+<td style="text-align:center">大润发</td>
+<td style="text-align:right">全场8折</td>
+</tr>
+</tbody>
+</table>
+<p>具体语法：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">| 商家ID         | 商家名称        | 活动  |</div><div class="line">| ------------- |:-------------:| -----:|</div><div class="line">| 100000        | 水果摊         | 便宜卖 |</div><div class="line">| 123456        | 海鲜楼         | 无    |</div><div class="line">| 341554        | 大润发         | 全场8折|</div></pre></td></tr></table></figure>
+<h2 id="未完待续…"><a href="#未完待续…" class="headerlink" title="未完待续…."></a>未完待续….</h2><p>参考文档：<a href="http://www.appinn.com/markdown/" target="_blank" rel="external">Makrdown 语法中文文档</a></p>
+</the>]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;虽说又忙碌了一年，但是总觉得应该留下点什么，刚好前几天在用markdown写文章的时候遇到的坎坎坷坷。所以特地写了一遍关于markdown的一些语法，为以后写文章垫个路。希望可以帮到有需要的人，文章会不定期更新。好了，废话补多少，开始放大招😄😄😄&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="Markdown" scheme="http://lenxia.github.io/categories/Markdown/"/>
+    
+    
+      <category term="Markdown" scheme="http://lenxia.github.io/tags/Markdown/"/>
+    
+  </entry>
+  
+</feed>

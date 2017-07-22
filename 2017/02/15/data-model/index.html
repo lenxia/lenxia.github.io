@@ -92,7 +92,7 @@
 <link href="/css/main.css?v=5.1.1" rel="stylesheet" type="text/css" />
 
 
-  <meta name="keywords" content="Hexo, NexT" />
+  <meta name="keywords" content="数据仓库," />
 
 
 
@@ -110,15 +110,19 @@
 
 
 
-<meta name="description" content="任何的限制，都是从自己的内心开始的。">
-<meta property="og:type" content="website">
-<meta property="og:title" content="Lenxia's Blog">
-<meta property="og:url" content="http://lenxia.github.io/index.html">
+<meta name="description" content="维度建模常用四步法。">
+<meta property="og:type" content="article">
+<meta property="og:title" content="数据仓库之维度建模简谈">
+<meta property="og:url" content="http://lenxia.github.io/2017/02/15/data-model/index.html">
 <meta property="og:site_name" content="Lenxia's Blog">
-<meta property="og:description" content="任何的限制，都是从自己的内心开始的。">
+<meta property="og:description" content="维度建模常用四步法。">
+<meta property="og:image" content="http://lenxia.github.io/2017/02/15/data-model/fact.png">
+<meta property="og:image" content="http://lenxia.github.io/2017/02/15/data-model/buss.png">
+<meta property="og:updated_time" content="2017-07-22T08:05:43.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Lenxia's Blog">
-<meta name="twitter:description" content="任何的限制，都是从自己的内心开始的。">
+<meta name="twitter:title" content="数据仓库之维度建模简谈">
+<meta name="twitter:description" content="维度建模常用四步法。">
+<meta name="twitter:image" content="http://lenxia.github.io/2017/02/15/data-model/fact.png">
 
 
 
@@ -146,13 +150,13 @@
 
 
 
-  <link rel="canonical" href="http://lenxia.github.io/"/>
+  <link rel="canonical" href="http://lenxia.github.io/2017/02/15/data-model/"/>
 
 
 
 
 
-  <title>Lenxia's Blog</title>
+  <title>数据仓库之维度建模简谈 | Lenxia's Blog</title>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
@@ -177,9 +181,7 @@
     
   
 
-  <div class="container sidebar-position-left 
-   page-home 
- ">
+  <div class="container sidebar-position-left page-post-detail ">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -316,153 +318,9 @@
         <div class="content-wrap">
           <div id="content" class="content">
             
-  <section id="posts" class="posts-expand">
+
+  <div id="posts" class="posts-expand">
     
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-    <link itemprop="mainEntityOfPage" href="http://lenxia.github.io/2017/02/15/hello-world/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="Lenxia">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/head/avatar_1.png">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Lenxia's Blog">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-            
-            
-              
-                
-                <a class="post-title-link" href="/2017/02/15/hello-world/" itemprop="url">
-                  Hello World
-                </a>
-              
-            
-          </h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-02-15T13:58:41+08:00">
-                2017-02-15
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-            <span class="post-category" >
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">分类于</span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/Hexo/" itemprop="url" rel="index">
-                    <span itemprop="name">Hexo</span>
-                  </a>
-                </span>
-
-                
-                
-              
-            </span>
-          
-
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          Welcome to Hexo.
-          <!--noindex-->
-          <div class="post-button text-center">
-            <a class="btn" href="/2017/02/15/hello-world/">
-              阅读全文 &raquo;
-            </a>
-          </div>
-          <!--/noindex-->
-        
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-
-
-    
-      
 
   
 
@@ -492,10 +350,7 @@
             
             
               
-                
-                <a class="post-title-link" href="/2017/02/15/data-model/" itemprop="url">
-                  数据仓库之维度建模简谈
-                </a>
+                数据仓库之维度建模简谈
               
             
           </h1>
@@ -552,155 +407,18 @@
           
 
           
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          维度建模常用四步法。
-          <!--noindex-->
-          <div class="post-button text-center">
-            <a class="btn" href="/2017/02/15/data-model/">
-              阅读全文 &raquo;
-            </a>
-          </div>
-          <!--/noindex-->
-        
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-    <link itemprop="mainEntityOfPage" href="http://lenxia.github.io/2017/02/15/markdown-summary/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="Lenxia">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/head/avatar_1.png">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Lenxia's Blog">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-            
-            
-              
-                
-                <a class="post-title-link" href="/2017/02/15/markdown-summary/" itemprop="url">
-                  Markdown 语法总结
-                </a>
-              
-            
-          </h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-02-15T10:29:38+08:00">
-                2017-02-15
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-            <span class="post-category" >
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">分类于</span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/Markdown/" itemprop="url" rel="index">
-                    <span itemprop="name">Markdown</span>
-                  </a>
-                </span>
-
-                
-                
-              
+            <span class="post-meta-divider">|</span>
+            <span class="page-pv"><i class="fa fa-file-o"></i> 浏览
+            <span class="busuanzi-value" id="busuanzi_value_page_pv" ></span>次
             </span>
           
 
           
-            
-          
 
           
-          
-
-          
-
-          
-
+              <div class="post-description">
+                  维度建模常用四步法。
+              </div>
           
 
         </div>
@@ -713,50 +431,201 @@
       
 
       
+        <p>简单记录下数据仓库之维度建模。</p>
+<a id="more"></a>
+<the rest="" of="" contents="" |="" 余下全文="">
+
+
+<h2 id="写在前面"><a href="#写在前面" class="headerlink" title="写在前面"></a>写在前面</h2><hr>
+<h3 id="基本概念"><a href="#基本概念" class="headerlink" title="基本概念"></a>基本概念</h3><h4 id="事实表"><a href="#事实表" class="headerlink" title="事实表"></a>事实表</h4><p>在多维数据仓库中，保存度量值的详细值或事实的表称为“事实表”；一般用来存储历史数据（如销售额、利润等）；事实数据表不应该包含描述性的信息。如下面销售数据事实表。</p>
+<table>
+<thead>
+<tr>
+<th>时间维ID</th>
+<th style="text-align:center">地域维ID</th>
+<th style="text-align:right">销售额</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>20150101</td>
+<td style="text-align:center">J0001</td>
+<td style="text-align:right">$3000</td>
+</tr>
+<tr>
+<td>20150215</td>
+<td style="text-align:center">C1011</td>
+<td style="text-align:right">$1500</td>
+</tr>
+<tr>
+<td>20161212</td>
+<td style="text-align:center">D1100</td>
+<td style="text-align:right">$5000</td>
+</tr>
+</tbody>
+</table>
+<p>总结：事实表主要是用来存储事实的度量值和各个维的码值（即维度表的主键ID）</p>
+<h4 id="维度表"><a href="#维度表" class="headerlink" title="维度表"></a>维度表</h4><p>维度表是用来存储维度属性，是观察问题的不同角度。如下地区维表</p>
+<table>
+<thead>
+<tr>
+<th>地域维ID</th>
+<th style="text-align:center">国家</th>
+<th style="text-align:right">省份</th>
+<th style="text-align:right">城市</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>J0001</td>
+<td style="text-align:center">CHINA</td>
+<td style="text-align:right">广东省</td>
+<td style="text-align:right">广州市</td>
+</tr>
+<tr>
+<td>C1011</td>
+<td style="text-align:center">CHINA</td>
+<td style="text-align:right">山东省</td>
+<td style="text-align:right">济南市</td>
+</tr>
+<tr>
+<td>D1100</td>
+<td style="text-align:center">CHINA</td>
+<td style="text-align:right">山西省</td>
+<td style="text-align:right">太原市</td>
+</tr>
+</tbody>
+</table>
+<h4 id="案例"><a href="#案例" class="headerlink" title="案例"></a>案例</h4><p>下面以维度建模中常用的星星模型举个栗子：假如某业务部门想要统计过去几年的销售情况，就可以像如下进行数据建模。</p>
+<p><img src="/2017/02/15/data-model/fact.png"></p>
+<p>ps:图片摘自网络。</p>
+<h2 id="接下来"><a href="#接下来" class="headerlink" title="接下来"></a>接下来</h2><hr>
+<h3 id="四步法-Kimball理论"><a href="#四步法-Kimball理论" class="headerlink" title="四步法(Kimball理论)"></a>四步法(Kimball理论)</h3><h4 id="Step1-确定业务过程"><a href="#Step1-确定业务过程" class="headerlink" title="Step1:确定业务过程"></a>Step1:确定业务过程</h4><p>该过程主要对<strong><em>关键</em></strong>的业务逻辑以及规则进行处理，通常是选择多个业务过程对主题合理的划分。</p>
+<p>以淘宝购物举个例子：</p>
+<p><img src="/2017/02/15/data-model/buss.png"><br>业务过程通常用行为动词表示，表示业务执行的活动，比如上面的黄色棱形框。一旦业务过程确定之后，事实表的基本构建已经明确。</p>
+<h4 id="Step2-确定事实粒度（声明粒度）"><a href="#Step2-确定事实粒度（声明粒度）" class="headerlink" title="Step2:确定事实粒度（声明粒度）"></a>Step2:确定事实粒度（声明粒度）</h4><p>粒度的声明确定了事实表每一行代表什么业务，一般以最小粒度进行事实表的构建，这样做是方便向下钻取</p>
+<font color="red">Tips:</font>
+
+<p>粒度：定义为“如何描述事实表的单个行?”；以上面淘宝购物为例，对于订单这个过程，就可以选择订单这个粒度。不同的业务场景有不同的粒度，比如产品粒度，时间粒度等等</p>
+<p>钻取：olap概念，后续细说。。。</p>
+<h4 id="Step3-确定维度"><a href="#Step3-确定维度" class="headerlink" title="Step3:确定维度"></a>Step3:确定维度</h4><p>完成了粒度的声明，也就意味着维主键已经确认，对应的维度字段就可以确认了。比如上面淘宝购物栗子，相关的维度信息：买家维度、卖家维度、商品维度、时间维度。</p>
+<h4 id="Step4-确定事实"><a href="#Step4-确定事实" class="headerlink" title="Step4:确定事实"></a>Step4:确定事实</h4><p>事实可以通过回答“过程的度量是什么”来确定。应该选择与业务过程有关所有事实，且事实的粒度要与所声明的事实表粒度一致。事实有可加性、半可加性、非可加性事实，需要将不可加事实分解为可加的组件。</p>
+<p>在淘宝购物的订单付款事务事实表中，同粒度的事实有子订单分摊的支付金额、邮费、优惠金额等。</p>
+<h2 id="写在最后"><a href="#写在最后" class="headerlink" title="写在最后"></a>写在最后</h2><hr>
+<p>以上为构建数仓常用的一些理论知识，后续会不断完善和提高。。。</p>
+<p>参考：</p>
+<p><a href="https://yq.aliyun.com/articles/110992" target="_blank" rel="external">https://yq.aliyun.com/articles/110992</a></p>
+<p><a href="http://itindex.net/detail/52754-%E7%BB%B4%E5%BA%A6-%E6%A6%82%E5%BF%B5" target="_blank" rel="external">http://itindex.net/detail/52754-%E7%BB%B4%E5%BA%A6-%E6%A6%82%E5%BF%B5</a></p>
+</the>
+      
+    </div>
+
+    <div>
+      
         
-          markdown常用语法介绍。
-          <!--noindex-->
-          <div class="post-button text-center">
-            <a class="btn" href="/2017/02/15/markdown-summary/">
-              阅读全文 &raquo;
-            </a>
-          </div>
-          <!--/noindex-->
+
+      
+    </div>
+
+    <div>
+      
         
+  <div style="padding: 10px 0; margin: 20px auto; width: 90%; text-align: center;">
+    <div>各位客官,留点碎银子呗✧(≖ ◡ ≖✿)奴家会再接再厉的!!!</div>
+    <button id="rewardButton" disable="enable" onclick="var qr = document.getElementById('QR'); if (qr.style.display === 'none') {qr.style.display='block';} else {qr.style.display='none'}">
+      <span>赏</span>
+    </button>
+    <div id="QR" style="display: none;">
+      
+        <div id="wechat" style="display: inline-block">
+          <img id="wechat_qr" src="/images/head/wechat-reward-image.jpg" alt="Lenxia WeChat Pay"/>
+          <p>微信打赏</p>
+        </div>
+      
+      
+    </div>
+  </div>
+
+
       
     </div>
 
     <div>
       
-    </div>
+        
 
-    <div>
-      
-    </div>
-
-    <div>
       
     </div>
 
     <footer class="post-footer">
       
-
+        <div class="post-tags">
+          
+            <a href="/tags/数据仓库/" rel="tag"># 数据仓库</a>
+          
+        </div>
       
 
       
+        
+      
 
       
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2017/02/15/markdown-summary/" rel="next" title="Markdown 语法总结">
+                <i class="fa fa-chevron-left"></i> Markdown 语法总结
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2017/02/15/hello-world/" rel="prev" title="Hello World">
+                Hello World <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
       
-        <div class="post-eof"></div>
+
+      
       
     </footer>
   </article>
 
 
-    
-  </section>
 
-  
+    <div class="post-spread">
+      
+        <!-- JiaThis Button BEGIN -->
+<div class="jiathis_style">
+  <a class="jiathis_button_tsina"></a>
+  <a class="jiathis_button_tqq"></a>
+  <a class="jiathis_button_weixin"></a>
+  <a class="jiathis_button_cqq"></a>
+  <a class="jiathis_button_douban"></a>
+  <a class="jiathis_button_renren"></a>
+  <a class="jiathis_button_qzone"></a>
+  <a class="jiathis_button_kaixin001"></a>
+  <a class="jiathis_button_copy"></a>
+  <a href="http://www.jiathis.com/share" class="jiathis jiathis_txt jiathis_separator jtico jtico_jiathis" target="_blank"></a>
+  <a class="jiathis_counter_style"></a>
+</div>
+<script type="text/javascript" >
+  var jiathis_config={
+    hideMore:false
+  }
+</script>
+<script type="text/javascript" src="http://v3.jiathis.com/code/jia.js" charset="utf-8"></script>
+<!-- JiaThis Button END -->
+
+      
+    </div>
+  </div>
 
 
           </div>
@@ -764,6 +633,12 @@
 
 
           
+  <div class="comments" id="comments">
+    
+      <div id="uyan_frame"></div>
+    
+  </div>
+
 
         </div>
         
@@ -783,8 +658,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <section class="site-overview sidebar-panel sidebar-panel-active">
+      <section class="site-overview sidebar-panel">
         <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
           <img class="site-author-image" itemprop="image"
                src="/images/head/avatar_1.png"
@@ -887,6 +771,22 @@
 
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#写在前面"><span class="nav-number">1.</span> <span class="nav-text">写在前面</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#基本概念"><span class="nav-number">1.1.</span> <span class="nav-text">基本概念</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#事实表"><span class="nav-number">1.1.1.</span> <span class="nav-text">事实表</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#维度表"><span class="nav-number">1.1.2.</span> <span class="nav-text">维度表</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#案例"><span class="nav-number">1.1.3.</span> <span class="nav-text">案例</span></a></li></ol></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#接下来"><span class="nav-number">2.</span> <span class="nav-text">接下来</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#四步法-Kimball理论"><span class="nav-number">2.1.</span> <span class="nav-text">四步法(Kimball理论)</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#Step1-确定业务过程"><span class="nav-number">2.1.1.</span> <span class="nav-text">Step1:确定业务过程</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#Step2-确定事实粒度（声明粒度）"><span class="nav-number">2.1.2.</span> <span class="nav-text">Step2:确定事实粒度（声明粒度）</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#Step3-确定维度"><span class="nav-number">2.1.3.</span> <span class="nav-text">Step3:确定维度</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#Step4-确定事实"><span class="nav-number">2.1.4.</span> <span class="nav-text">Step4:确定事实</span></a></li></ol></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#写在最后"><span class="nav-number">3.</span> <span class="nav-text">写在最后</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
       
@@ -1029,6 +929,10 @@
   
 
   
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.1"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.1"></script>
+
+
 
   
 
@@ -1060,6 +964,10 @@
   
     
 
+    
+      <!-- UY BEGIN -->
+      <script type="text/javascript" src="http://v2.uyan.cc/code/uyan.js?uid=2131698"></script>
+      <!-- UY END -->
     
   
 

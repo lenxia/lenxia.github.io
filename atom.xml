@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>Lenxia&#39;s Blog</title>
-  <subtitle>一本正经的胡说八道</subtitle>
+  <subtitle>任何的限制，都是从自己的内心开始的。</subtitle>
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://lenxia.github.io/"/>
@@ -46,6 +46,113 @@
     
     
       <category term="Hexo" scheme="http://lenxia.github.io/tags/Hexo/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>数据仓库之维度建模简谈</title>
+    <link href="http://lenxia.github.io/2017/02/15/data-model/"/>
+    <id>http://lenxia.github.io/2017/02/15/data-model/</id>
+    <published>2017-02-15T02:29:38.000Z</published>
+    <updated>2017-07-22T08:05:43.000Z</updated>
+    
+    <content type="html"><![CDATA[<p>简单记录下数据仓库之维度建模。</p>
+<a id="more"></a>
+<the rest="" of="" contents="" |="" 余下全文="">
+
+
+<h2 id="写在前面"><a href="#写在前面" class="headerlink" title="写在前面"></a>写在前面</h2><hr>
+<h3 id="基本概念"><a href="#基本概念" class="headerlink" title="基本概念"></a>基本概念</h3><h4 id="事实表"><a href="#事实表" class="headerlink" title="事实表"></a>事实表</h4><p>在多维数据仓库中，保存度量值的详细值或事实的表称为“事实表”；一般用来存储历史数据（如销售额、利润等）；事实数据表不应该包含描述性的信息。如下面销售数据事实表。</p>
+<table>
+<thead>
+<tr>
+<th>时间维ID</th>
+<th style="text-align:center">地域维ID</th>
+<th style="text-align:right">销售额</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>20150101</td>
+<td style="text-align:center">J0001</td>
+<td style="text-align:right">$3000</td>
+</tr>
+<tr>
+<td>20150215</td>
+<td style="text-align:center">C1011</td>
+<td style="text-align:right">$1500</td>
+</tr>
+<tr>
+<td>20161212</td>
+<td style="text-align:center">D1100</td>
+<td style="text-align:right">$5000</td>
+</tr>
+</tbody>
+</table>
+<p>总结：事实表主要是用来存储事实的度量值和各个维的码值（即维度表的主键ID）</p>
+<h4 id="维度表"><a href="#维度表" class="headerlink" title="维度表"></a>维度表</h4><p>维度表是用来存储维度属性，是观察问题的不同角度。如下地区维表</p>
+<table>
+<thead>
+<tr>
+<th>地域维ID</th>
+<th style="text-align:center">国家</th>
+<th style="text-align:right">省份</th>
+<th style="text-align:right">城市</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>J0001</td>
+<td style="text-align:center">CHINA</td>
+<td style="text-align:right">广东省</td>
+<td style="text-align:right">广州市</td>
+</tr>
+<tr>
+<td>C1011</td>
+<td style="text-align:center">CHINA</td>
+<td style="text-align:right">山东省</td>
+<td style="text-align:right">济南市</td>
+</tr>
+<tr>
+<td>D1100</td>
+<td style="text-align:center">CHINA</td>
+<td style="text-align:right">山西省</td>
+<td style="text-align:right">太原市</td>
+</tr>
+</tbody>
+</table>
+<h4 id="案例"><a href="#案例" class="headerlink" title="案例"></a>案例</h4><p>下面以维度建模中常用的星星模型举个栗子：假如某业务部门想要统计过去几年的销售情况，就可以像如下进行数据建模。</p>
+<p><img src="/2017/02/15/data-model/fact.png"></p>
+<p>ps:图片摘自网络。</p>
+<h2 id="接下来"><a href="#接下来" class="headerlink" title="接下来"></a>接下来</h2><hr>
+<h3 id="四步法-Kimball理论"><a href="#四步法-Kimball理论" class="headerlink" title="四步法(Kimball理论)"></a>四步法(Kimball理论)</h3><h4 id="Step1-确定业务过程"><a href="#Step1-确定业务过程" class="headerlink" title="Step1:确定业务过程"></a>Step1:确定业务过程</h4><p>该过程主要对<strong><em>关键</em></strong>的业务逻辑以及规则进行处理，通常是选择多个业务过程对主题合理的划分。</p>
+<p>以淘宝购物举个例子：</p>
+<p><img src="/2017/02/15/data-model/buss.png"><br>业务过程通常用行为动词表示，表示业务执行的活动，比如上面的黄色棱形框。一旦业务过程确定之后，事实表的基本构建已经明确。</p>
+<h4 id="Step2-确定事实粒度（声明粒度）"><a href="#Step2-确定事实粒度（声明粒度）" class="headerlink" title="Step2:确定事实粒度（声明粒度）"></a>Step2:确定事实粒度（声明粒度）</h4><p>粒度的声明确定了事实表每一行代表什么业务，一般以最小粒度进行事实表的构建，这样做是方便向下钻取</p>
+<font color="red">Tips:</font>
+
+<p>粒度：定义为“如何描述事实表的单个行?”；以上面淘宝购物为例，对于订单这个过程，就可以选择订单这个粒度。不同的业务场景有不同的粒度，比如产品粒度，时间粒度等等</p>
+<p>钻取：olap概念，后续细说。。。</p>
+<h4 id="Step3-确定维度"><a href="#Step3-确定维度" class="headerlink" title="Step3:确定维度"></a>Step3:确定维度</h4><p>完成了粒度的声明，也就意味着维主键已经确认，对应的维度字段就可以确认了。比如上面淘宝购物栗子，相关的维度信息：买家维度、卖家维度、商品维度、时间维度。</p>
+<h4 id="Step4-确定事实"><a href="#Step4-确定事实" class="headerlink" title="Step4:确定事实"></a>Step4:确定事实</h4><p>事实可以通过回答“过程的度量是什么”来确定。应该选择与业务过程有关所有事实，且事实的粒度要与所声明的事实表粒度一致。事实有可加性、半可加性、非可加性事实，需要将不可加事实分解为可加的组件。</p>
+<p>在淘宝购物的订单付款事务事实表中，同粒度的事实有子订单分摊的支付金额、邮费、优惠金额等。</p>
+<h2 id="写在最后"><a href="#写在最后" class="headerlink" title="写在最后"></a>写在最后</h2><hr>
+<p>以上为构建数仓常用的一些理论知识，后续会不断完善和提高。。。</p>
+<p>参考：</p>
+<p><a href="https://yq.aliyun.com/articles/110992" target="_blank" rel="external">https://yq.aliyun.com/articles/110992</a></p>
+<p><a href="http://itindex.net/detail/52754-%E7%BB%B4%E5%BA%A6-%E6%A6%82%E5%BF%B5" target="_blank" rel="external">http://itindex.net/detail/52754-%E7%BB%B4%E5%BA%A6-%E6%A6%82%E5%BF%B5</a></p>
+</the>]]></content>
+    
+    <summary type="html">
+    
+      维度建模常用四步法。
+    
+    </summary>
+    
+      <category term="数据仓库" scheme="http://lenxia.github.io/categories/%E6%95%B0%E6%8D%AE%E4%BB%93%E5%BA%93/"/>
+    
+    
+      <category term="数据仓库" scheme="http://lenxia.github.io/tags/%E6%95%B0%E6%8D%AE%E4%BB%93%E5%BA%93/"/>
     
   </entry>
   
